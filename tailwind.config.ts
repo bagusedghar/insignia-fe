@@ -15,6 +15,20 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui')
+  ],
+  daisyui: {
+    themes: [
+      {
+        retro: {
+          ...require("daisyui/src/theming/themes")["retro"],
+          primary: "#f4e3cf",
+          secondary: "#953e46",
+          "base-100": "#953e46"
+        }
+      }
+    ],
+  },
 }
 export default config
